@@ -1,10 +1,9 @@
 p = {
-  title = "GAMES",
-  g = create_gui({x=0,y=0,
+	title = "GAMES", -- the title displayed on the tab
+	g = create_gui({x=0,y=0,
 		width=explorer.current_width,height=300,--this height determines scroll and page height
 		fgcol = 0x090d}),
-  
-  init = function(self,explorer)
+	init = function(self,explorer)
 		self.g:attach_button({x=0,y=100,label="Train Journey (PICO-8)",-- here's attach button, it supports and uses the gui library
 			tap=function()
 				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/trainjourney.lua")

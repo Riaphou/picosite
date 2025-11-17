@@ -1,10 +1,11 @@
 title = "riaphou"
 function _init()
-	
+	song = unpod("b64:bHo0AG8AAABtAAAA8Dp7cGF0dGVybj1weHUAAyB4BAABAgMEBQYHAQaQAwQFCwwNDg8PAAaQBgcIDxMPFA8VDxYPFwAGkAkPCgsPGw8cDx0PHg8fAAWQKQDwESMPJA8lDyYPJwAEkA8PDxAPEQ8rDywPLQ8uDy8GBJB9")
+	music(song)
 end
 
 function _update()
-
+	
 end
 
 function _draw()

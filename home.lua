@@ -1,5 +1,5 @@
 p = {
-  title = "GAMES"
+  title = "GAMES",
   g = create_gui({x=0,y=0,
 		width=explorer.current_width,height=300,--this height determines scroll and page height
 		fgcol = 0x090d}),

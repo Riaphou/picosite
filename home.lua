@@ -7,6 +7,30 @@ function _init()
 		song:poke(0x80000)
 	end
 	music(0, nil, nil, 0x80000)
+
+	link = create_gui():attach_button{
+        x=10, y=80,
+        label="random link",
+        tap=function()
+            web_visit("pntp://monsite")
+        end
+    }
+
+	dawnload = create_gui():attach_button{
+        x=10, y=90,
+        label="random link",
+        tap=function()
+			local data = fetch(url)
+			if data then
+				mkdir("/downloads")
+				store("/downloads/"..filename, data, {})
+				notify("Téléchargé : "..filename)
+			else
+				notify("Erreur de téléchargement")
+			end
+		end
+	}
+	
 end
 
 function _update()

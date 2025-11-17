@@ -1,6 +1,9 @@
 title = "riaphou"
 function _init()
-	fetch("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx"):poke(0x80000)
+	song = fetch("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")
+	if song ~= nil then
+		song:poke(0x80000)
+	end
 	music(0, nil, nil, 0x80000)
 end
 

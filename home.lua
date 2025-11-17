@@ -1,4 +1,4 @@
-p = {
+
 	title = "GAMES", -- the title displayed on the tab
 	g = create_gui({x=0,y=0,
 		width=explorer.current_width,height=300,--this height determines scroll and page height
@@ -36,4 +36,3 @@ p = {
 		22), -- params (excluding the pod) are: number of frames
 	smile = new_gif("b64:bHo0AM0AAAAFAQAA8wVweHUAQyAwEARAWZBZkFlwGVoZUAQAU0AJmgkwBADVIAkqADoAKgkQCboJEAwA1RogGiAaCRAJCiA6IAoQAOIACSogGiAqGToQGhA6GQwAAgYAUxogOiAaDABzOgA6ADoZ2ggAWRoAegAaBgA0CrAKBADwBCkaAA8YOA4AGjkKAHgACjkaAA4OAMEZABkaAD4AGhkQGQoSADQKGRASANIpGjAaKRApCgA_AAopDgDwDCA5OjkwKQowCikwOTo5QJlQmVCZcFmQWZBZQA==",
 		3)
-}

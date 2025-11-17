@@ -18,15 +18,14 @@ function _init()
 
 	dawnload = create_gui():attach_button{
         x=10, y=90,
-        label="random link",
+        label="dawnload test",
         tap=function()
-			local data = fetch(url)
+			local data = fetch_web_only("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")
 			if data then
-				mkdir("/downloads")
-				store("/downloads/"..filename, data, {})
-				notify("Téléchargé : "..filename)
+				store("/downloads/oldPlageMusic.sfx", data, {})
+				notify("Dawnloaded : /downloads/oldPlageMusic.sfx")
 			else
-				notify("Erreur de téléchargement")
+				notify("File not found..")
 			end
 		end
 	}

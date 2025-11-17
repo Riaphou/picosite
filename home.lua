@@ -1,7 +1,7 @@
 title = "riaphou"
 function _init()
 	sprite = unpod("b64:bHo0AEkAAABaAAAA_A5weHUAQyAQEAQweGAPGIhAOE4oIA4oUA4YIA4YYAYA_g4oIA4YUCgwDphADohQDhguGA5gDhgQDhhwDhgQHisAYA4YIA4YUA==")
-	song = fetch("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")
+	song = fetch_web_only("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")
 	
 	if song ~= nil then
 		song:poke(0x80000)

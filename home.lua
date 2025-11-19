@@ -19,7 +19,7 @@ function _init()
     }
 	
 	gui:attach_button{
-        x=15, y=0,
+        x=0, y=15,
         label="dawnload test",
         tap=function()
 			local data = fetch_web_only("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")

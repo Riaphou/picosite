@@ -8,7 +8,7 @@ function _init()
 	end
 	music(0, nil, nil, 0x80000)
 
-	gui = create_gui{x=0,y=10,width=100,height=80}
+	gui = create_gui{x=0,y=0,width=100,height=80}
 
     gui:attach_button{
         x=45, y=0,
@@ -35,7 +35,7 @@ function _init()
 end
 
 function _update()
-	
+	gui:update_all()
 end
 
 function _draw()

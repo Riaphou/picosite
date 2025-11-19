@@ -8,10 +8,10 @@ function _init()
 	end
 	music(0, nil, nil, 0x80000)
 
-	gui = create_gui{x=10,y=60,width=100,height=80}
+	gui = create_gui{x=0,y=0,width=100,height=80}
 
     gui:attach_button{
-        x=10, y=0,
+        x=45, y=0,
         label="random link",
         tap=function()
             web_visit("pntp://monsite")
@@ -19,7 +19,7 @@ function _init()
     }
 	
 	gui:attach_button{
-        x=10, y=10,
+        x=65, y=10,
         label="dawnload test",
         tap=function()
 			local data = fetch_web_only("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")

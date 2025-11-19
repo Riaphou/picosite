@@ -1,6 +1,6 @@
 title = "riaphou"
 function _init()
-	random = 0
+	random = 1
 	max = 2
 	listeSites = {
 		"pntp://astralsparv.p",
@@ -45,8 +45,8 @@ end
 
 function _update()
 		random=random+1
-		if random >= max then
-			random = 0
+		if random > max then
+			random = 1
 		end
 	gui:update_all()
 end

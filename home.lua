@@ -21,7 +21,7 @@ function _init()
         x=5, y=5,
         label="random link",
         tap=function()
-			web_visit(listeSites[random])
+			rRandomSite()
         end
     }
 	
@@ -41,7 +41,9 @@ function _init()
 	
 end
 
-
+function rRandomSite()
+	web_visit(listeSites[random])
+end
 
 function _update()
 		random=random+1

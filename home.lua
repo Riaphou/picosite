@@ -3,6 +3,8 @@ function _init()
 	random = 0
 	max = 2
 	listeSites = {
+		"pntp://astralsparv.p",
+		"pntp://astralsparv.p",
 		"pntp://meivu.u",
 		"pntp://astralsparv.p"
 	}

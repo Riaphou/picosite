@@ -43,6 +43,10 @@ function _draw()
 	print("The page content load correctly.",10,10,7)
 	
 	spr(sprite, 3,20)
+
+	gui.draw = function(self)
+    	rectfill(0,0,self.width,self.height,1)
+	end
 	gui:draw_all()
 end
 

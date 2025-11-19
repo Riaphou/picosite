@@ -4,9 +4,7 @@ function _init()
 	max = 2
 	listeSites = {
 		"pntp://astralsparv.p",
-		"pntp://astralsparv.p",
 		"pntp://meivu.u",
-		"pntp://astralsparv.p"
 	}
 	
 	sprite = unpod("b64:bHo0AEkAAABaAAAA_A5weHUAQyAQEAQweGAPGIhAOE4oIA4oUA4YIA4YYAYA_g4oIA4YUCgwDphADohQDhguGA5gDhgQDhhwDhgQHisAYA4YIA4YUA==")

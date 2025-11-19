@@ -1,5 +1,12 @@
 title = "riaphou"
 function _init()
+	random = 0
+	max = 2
+	listeSites = {
+		"pntp://meivu.u",
+		"pntp://astralsparv.p"
+	}
+	
 	sprite = unpod("b64:bHo0AEkAAABaAAAA_A5weHUAQyAQEAQweGAPGIhAOE4oIA4oUA4YIA4YYAYA_g4oIA4YUCgwDphADohQDhguGA5gDhgQDhhwDhgQHisAYA4YIA4YUA==")
 	song = fetch_web_only("https://github.com/Riaphou/picosite/raw/refs/heads/main/oldPlageMusic.sfx")
 	
@@ -14,7 +21,7 @@ function _init()
         x=5, y=5,
         label="random link",
         tap=function()
-            web_visit("pntp://monsite")
+			web_visit(listeSites[random])
         end
     }
 	
@@ -34,9 +41,17 @@ function _init()
 	
 end
 
+
+
 function _update()
+		random=random+1
+		if random >= max then
+			random = 0
+		end
 	gui:update_all()
 end
+
+
 
 function _draw()
 	cls(18)
